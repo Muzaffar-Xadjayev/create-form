@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="bootstrap/bootstrap.css">
+</head>
+
+<body>
+
+    <header id="main-header" class="bg-success text-white p-4 mb-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1 id="header-title">Table of Elements</h1>
+                </div>
+                <div class="col-md-6">
+                    <input type="text" id="filter" placeholder="Filter" class="form-control">
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="card card-body" id="main">
+            <h2 class="title">Create Element</h2>
+            <form id="addForm">
+                <input type="text" id="item" class="form-control me-2" style="width:25%;display: inline-block;">
+                <input type="submit" class="btn btn-primary" value="Send" style="margin-top: -4px;">
+            </form>
+            <h2 class="title">Elements</h2>
+            <ul id="items" class="list-group">
+                <li class="list-group-item">Element1 <button class="btn btn-danger btn-sm float-end delete">X</button>
+                </li>
+                <li class="list-group-item">Element2 <button class="btn btn-danger btn-sm float-end delete">X</button>
+                </li>
+                <li class="list-group-item">Element3 <button class="btn btn-danger btn-sm float-end delete">X</button>
+                </li>
+                <li class="list-group-item">Element4 <button class="btn btn-danger btn-sm float-end delete">X</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
